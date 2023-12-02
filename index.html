@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Assistant:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <section class="login" id="login">
+      <div class="head">
+        <img
+          src="https://mateuspntx.github.io/templates/login-page/i/telescope.png"
+        />
+        <h1 class="company">People telescope</h1>
+      </div>
+      <p class="msg">Welcome back</p>
+      <div class="form">
+        <form action="user_login.jsp" method="post">
+          <input
+            type="email"
+            placeholder="User-email"
+            class="email"
+            id="email"
+            name="email"
+            required
+          /><br />
+          <input
+            type="password"
+            placeholder="••••••••••••••"
+            class="password"
+            name="pass"
+            required
+          /><br />
+          <input type="submit" value="Login" class="btn-login" id="do-login" />
+          <a href="user_signup.html" class="sign_up">sign-up?</a>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

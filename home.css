@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Assistant:400,700);
+body {
+  margin: 0px;
+  background: #abcdef;
+}
+nav {
+  margin-top: 40px;
+  padding: 24px;
+  text-align: center;
+  font-family: Assistant;
+}
+
+.link-1 {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link-1:hover {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 24px 10px;
+}
+.image {
+  position: absolute;
+  bottom: 85%;
+  right: 90%;
+}

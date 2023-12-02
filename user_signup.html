@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGN-UP</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Assistant:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style_signup.css" />
+  </head>
+  <body>
+    <section class="signup">
+      <div class="head">
+        <img
+          src="https://mateuspntx.github.io/templates/login-page/i/telescope.png"
+        />
+        <h1 class="company">People telescope</h1>
+      </div>
+      <p class="msg">Please SIGN-UP</p>
+      <div class="form">
+        <form
+          name="signup"
+          action="signup_suc.jsp"
+          method="post"
+          onsubmit="return func5()"
+        >
+          <input
+            type="text"
+            placeholder="Username"
+            class="text"
+            name="uname"
+            onchange="func2(this.value)"
+            required
+          /><br />
+          <div id="result1"></div>
+          <input
+            type="date"
+            placeholder="Date of Birth"
+            class="date"
+            name="dt"
+            required
+          /><br />
+          <input
+            type="email"
+            placeholder="Email"
+            class="email"
+            name="email"
+            onchange="func1(this.value)"
+            id="email"
+            required
+          /><br />
+          <div id="result"></div>
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            class="phno"
+            id="phno"
+            name="tn"
+            required
+          /><br />
+          <input
+            type="password"
+            placeholder="Password"
+            class="password"
+            name="passwd"
+            id="passwd"
+            onkeyup="return func3(this.value)"
+            onchange="return func4(this.value)"
+            required
+          /><br />
+          <div id="show"></div>
+          <input
+            type="password"
+            placeholder="Conform Password"
+            class="cpassword"
+            id="cpasswd"
+          /><br />
+          <input type="submit" value="SIGN-UP" class="btn-signup" />
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="./script_signup.js"></script>
+  <script src="./script_signup_form.js"></script>
+</html>

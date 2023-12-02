@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Photo uploader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./pic_upload_style.css" />
+  </head>
+  <body>
+    <div class="container-upload container-upload-collapsed" id="container">
+      <div class="wrapper" id="wrapper">
+        <button class="no-image" id="img-result">Upload Image</button>
+      </div>
+      <div class="upload-result">
+        <button class="hide-button">Close</button>
+        <pre class="upload-result__content"></pre>
+      </div>
+      <button id="closebtn"></button>
+      <div class="image-info">
+        <form
+          action="fileUpload.jsp"
+          enctype="multipart/form-data"
+          method="post"
+        >
+          <label class="label">FileName</label>
+          <input class="input" id="filename" type="text" name="uploadfile" />
+          <input type="submit" name="Submit" class="button">upload</input>
+        </form>
+      </div>
+    </div>
+    <script src="./pic_upload_script.js"></script>
+  </body>
+</html>
